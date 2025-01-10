@@ -16,7 +16,7 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("get-users")]
-        public IActionResult GetUsers()
+        public async Task<IActionResult> GetUsers()
         {
             var users = _userRepository.GetUsers();
 
